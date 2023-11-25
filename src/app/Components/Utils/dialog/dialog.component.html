@@ -1,0 +1,16 @@
+<div class="Conatiner">
+  <div class="Header">
+    <span>Write us an Email</span>
+    <mat-icon (click)="close()" style="cursor: pointer;">exit_to_app</mat-icon>
+  </div>
+  <form action="" style="width: 95%;">
+    <div *ngFor="let item of typesInput" class="flexFix">
+      <div class="contain">
+        <span>{{item.name}}</span>
+        <input *ngIf="item.type  != 'textarea'" style="height: 20px;" [type]="item.type" required>
+        <textarea *ngIf="item.type == 'textarea'" name="" id="" cols="30" rows="10"></textarea>
+      </div>
+    </div>
+    <button style="margin-top: 15px;" class='glowing-btn'><span class='glowing-txt'>SU<span class='faulty-letter'>B</span>MIT</span></button>
+  </form>
+</div>

@@ -1,25 +1,86 @@
-<ng-container [ngSwitch]="expression">
-  <ng-container *ngSwitchCase="'laptop'">
-    <div class="conatiner">
-      <mat-toolbar class="toolbar">
-        <div class="toolbarBtnLeft">
-          <a href=""><span>Home</span></a>
-          <a href="#about-us"><span>About us</span></a>
-          <a href=""><span>Services</span></a>
-        </div>
-        <div class="logo">
-          <svg fill="#000000" width="100px" height="80px" viewBox="-1.66 0 740.824 740.824"
+<div class="conatiner" style="width: 105.6%;">
+  <mat-toolbar class="toolbar">
+    <div class="toolbarBtnLeft">
+      <a href="#"><span>Home</span></a>
+      <a href="#about-us"><span>About us</span></a>
+      <a href="#services"><span>Services</span></a>
+    </div>
+    <div class="logo">
+      <svg fill="#000000" width="100px" height="80px" viewBox="-1.66 0 740.824 740.824"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M630.056 107.658C560.727 38.271 468.525.039 370.294 0 167.891 0 3.16 164.668 3.079 367.072c-.027 64.699 16.883 127.855 49.016 183.523L0 740.824l194.666-51.047c53.634 29.244 114.022 44.656 175.481 44.682h.151c202.382 0 367.128-164.689 367.21-367.094.039-98.088-38.121-190.32-107.452-259.707m-259.758 564.8h-.125c-54.766-.021-108.483-14.729-155.343-42.529l-11.146-6.613-115.516 30.293 30.834-112.592-7.258-11.543c-30.552-48.58-46.689-104.729-46.665-162.379C65.146 198.865 202.065 62 370.419 62c81.521.031 158.154 31.81 215.779 89.482s89.342 134.332 89.311 215.859c-.07 168.242-136.987 305.117-305.211 305.117m167.415-228.514c-9.176-4.591-54.286-26.782-62.697-29.843-8.41-3.061-14.526-4.591-20.644 4.592-6.116 9.182-23.7 29.843-29.054 35.964-5.351 6.122-10.703 6.888-19.879 2.296-9.175-4.591-38.739-14.276-73.786-45.526-27.275-24.32-45.691-54.36-51.043-63.542-5.352-9.183-.569-14.148 4.024-18.72 4.127-4.11 9.175-10.713 13.763-16.07 4.587-5.356 6.116-9.182 9.174-15.303 3.059-6.122 1.53-11.479-.764-16.07-2.294-4.591-20.643-49.739-28.29-68.104-7.447-17.886-15.012-15.466-20.644-15.746-5.346-.266-11.469-.323-17.585-.323-6.117 0-16.057 2.296-24.468 11.478-8.41 9.183-32.112 31.374-32.112 76.521s32.877 88.763 37.465 94.885c4.587 6.122 64.699 98.771 156.741 138.502 21.891 9.45 38.982 15.093 52.307 19.323 21.981 6.979 41.983 5.994 57.793 3.633 17.628-2.633 54.285-22.19 61.932-43.616 7.646-21.426 7.646-39.791 5.352-43.617-2.293-3.826-8.41-6.122-17.585-10.714" />
+      </svg>
+    </div>
+    <div class="toolbarBtnRight">
+      <div class="contacts">
+        <a href="#faq"><span>FAQ</span></a>
+        <a href="#contact"><span>Contact</span></a>
+      </div>
+      <div class="socialMediaIcons">
+        <span>
+          <svg fill="#000000" width="50px" height="45px" viewBox="0 0 32 32" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>gmail</title>
+              <path
+                d="M30.996 7.824v17.381c0 0 0 0 0 0.001 0 1.129-0.915 2.044-2.044 2.044-0 0-0 0-0.001 0h-4.772v-11.587l-8.179 6.136-8.179-6.136v11.588h-4.772c0 0 0 0-0 0-1.129 0-2.044-0.915-2.044-2.044 0-0 0-0.001 0-0.001v0-17.381c0-0 0-0.001 0-0.001 0-1.694 1.373-3.067 3.067-3.067 0.694 0 1.334 0.231 1.848 0.619l-0.008-0.006 10.088 7.567 10.088-7.567c0.506-0.383 1.146-0.613 1.84-0.613 1.694 0 3.067 1.373 3.067 3.067v0z">
+              </path>
+            </g>
+          </svg>
+        </span>
+        <span>
+          <svg fill="#000000" width="50px" height="50px" viewBox="-5.5 0 32 32" version="1.1"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>facebook</title>
+              <path
+                d="M1.188 5.594h18.438c0.625 0 1.188 0.563 1.188 1.188v18.438c0 0.625-0.563 1.188-1.188 1.188h-18.438c-0.625 0-1.188-0.563-1.188-1.188v-18.438c0-0.625 0.563-1.188 1.188-1.188zM14.781 17.281h2.875l0.125-2.75h-3v-2.031c0-0.781 0.156-1.219 1.156-1.219h1.75l0.063-2.563s-0.781-0.125-1.906-0.125c-2.75 0-3.969 1.719-3.969 3.563v2.375h-2.031v2.75h2.031v7.625h2.906v-7.625z">
+              </path>
+            </g>
+          </svg>
+        </span>
+        <span>
+          <svg width="50px" height="35px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#000000"
+            class="bi bi-linkedin">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z">
+              </path>
+            </g>
+          </svg>
+        </span>
+      </div>
+    </div>
+  </mat-toolbar>
+  <nav>
+    <div class="mobileNavbar">
+      <div class="navBars">
+        <div>
+          <svg fill="#000000" width="40px" height="80px" viewBox="-1.66 0 740.824 740.824"
             xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M630.056 107.658C560.727 38.271 468.525.039 370.294 0 167.891 0 3.16 164.668 3.079 367.072c-.027 64.699 16.883 127.855 49.016 183.523L0 740.824l194.666-51.047c53.634 29.244 114.022 44.656 175.481 44.682h.151c202.382 0 367.128-164.689 367.21-367.094.039-98.088-38.121-190.32-107.452-259.707m-259.758 564.8h-.125c-54.766-.021-108.483-14.729-155.343-42.529l-11.146-6.613-115.516 30.293 30.834-112.592-7.258-11.543c-30.552-48.58-46.689-104.729-46.665-162.379C65.146 198.865 202.065 62 370.419 62c81.521.031 158.154 31.81 215.779 89.482s89.342 134.332 89.311 215.859c-.07 168.242-136.987 305.117-305.211 305.117m167.415-228.514c-9.176-4.591-54.286-26.782-62.697-29.843-8.41-3.061-14.526-4.591-20.644 4.592-6.116 9.182-23.7 29.843-29.054 35.964-5.351 6.122-10.703 6.888-19.879 2.296-9.175-4.591-38.739-14.276-73.786-45.526-27.275-24.32-45.691-54.36-51.043-63.542-5.352-9.183-.569-14.148 4.024-18.72 4.127-4.11 9.175-10.713 13.763-16.07 4.587-5.356 6.116-9.182 9.174-15.303 3.059-6.122 1.53-11.479-.764-16.07-2.294-4.591-20.643-49.739-28.29-68.104-7.447-17.886-15.012-15.466-20.644-15.746-5.346-.266-11.469-.323-17.585-.323-6.117 0-16.057 2.296-24.468 11.478-8.41 9.183-32.112 31.374-32.112 76.521s32.877 88.763 37.465 94.885c4.587 6.122 64.699 98.771 156.741 138.502 21.891 9.45 38.982 15.093 52.307 19.323 21.981 6.979 41.983 5.994 57.793 3.633 17.628-2.633 54.285-22.19 61.932-43.616 7.646-21.426 7.646-39.791 5.352-43.617-2.293-3.826-8.41-6.122-17.585-10.714" />
           </svg>
         </div>
-        <div class="toolbarBtnRight">
-          <div class="contacts">
-            <a href=""><span>FAQ</span></a>
-            <a href=""><span>Contact</span></a>
+        <button (click)="openDrawer()" class="menu">
+          <div [ngClass]="{'rotateRight': clicked}"></div>
+          <div [ngClass]="{'rotateLeft': clicked}"></div>
+          <div [ngClass]="{'appear': clicked}"></div>
+        </button>
+      </div>
+      <div class="sidemenuBar" [ngStyle]="{'width': clicked ? '69%' : '0'}" style="transition: width 400ms;">
+        <div *ngIf="clicked" class="optionContainer">
+          <div class="options">
+            <a (click)="openDrawer()" *ngFor="let item of links" [href]="item.section">{{item.link}}</a>
           </div>
-          <div class="socialMediaIcons">
+          <div class="sideIcon">
             <span>
               <svg fill="#000000" width="50px" height="45px" viewBox="0 0 32 32" version="1.1"
                 xmlns="http://www.w3.org/2000/svg">
@@ -60,406 +121,959 @@
             </span>
           </div>
         </div>
-      </mat-toolbar>
-      <div class="box">
-        <div class="flexForRaccoon">
-          <div class="justFlex">
-            <div class="flexForLines">
-              <span class="intro-text">Enter</span>
-              <span class="intro-text">Your business</span>
-              <span class="intro-text">to the network</span>
-              <span class="intro-text">thanks to our</span>
-              <span class="intro-text">professional</span>
-              <span class="intro-text">Parties</span>
-            </div>
-            <div class="getBtn">
-              <a href="#about-us" class="button primary intro-btn" style="opacity: 1;">
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Get to know us better</font>
-                </font>
-              </a>
-            </div>
-          </div>
-          <div class="racoon" style="opacity: 1;">
-            <img class="racoon-img" src="../../../assets/racoon.webp"
-              alt="Photo of a raccoon with raised arms, company logo">
-          </div>
-        </div>
       </div>
-      <section class="aboutUsBox section__padding" id="about-us">
-        <h2 class="section__heading section__padding">
-          <span class="section__title">
+      <div (click)="openDrawer()" class="backdrop" *ngIf="clicked"></div>
+    </div>
+  </nav>
+  <header>
+    <div class="intro" style="pointer-events: all; opacity: 1;">
+      <div class="intro-left">
+        <h1 class="intro-text-cnt">
+          <span class="intro-text" style="transform: translate(0px);">
             <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">We are a group</font>
+              <font style="vertical-align: inherit;">Enter</font>
             </font>
           </span>
-        </h2>
-        <div class="rotating-block aos-init aos-animate" data-aos="zoom-out" data-aos-delay="100" data-aos-once="true"
-          data-aos-duration="500">
-          <h3 aria-describedby="aboutus-info-1" class="rotating-block-item section__text--big rotateHide">
+          <span class="intro-text" style="transform: translate(0px);">
             <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">
-                fresh programmers.
-              </font>
-            </font>
-          </h3>
-          <h3 aria-describedby="aboutus-info-2" class="rotating-block-item section__text--big rotateShow">
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">
-                motivated young people.
-              </font>
-            </font>
-          </h3>
-          <h3 aria-describedby="aboutus-info-3" class="rotating-block-item section__text--big standby">
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">
-                people open to others.
-              </font>
-            </font>
-          </h3>
-          <h3 aria-describedby="aboutus-info-4" class="rotating-block-item section__text--big standby">
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">
-                friends with a common hobby.
-              </font>
-            </font>
-          </h3>
-          <div class="rotating-block-dashed-bg absolute-center"></div>
-        </div>
-        <div class="rotating-block-indicators">
-          <div class="dot"></div>
-          <div class="dot active"></div>
-          <div class="dot"></div>
-          <div class="dot"></div>
-        </div>
-        <div class="fading-info aos-init aos-animate" data-aos="zoom-out" data-aos-delay="200" data-aos-once="true"
-          data-aos-duration="500">
-          <p class="fading-info-item section__text not-visible" id="aboutus-info-1">
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">
-                After current courses, we are aware of today's web standards and practice the most professional
-                solutions.
-              </font>
-            </font>
-          </p>
-          <p class="fading-info-item section__text" id="aboutus-info-2">
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">
-                After a long time devoted to learning, we are ready to enter the labor market full of ideas and
-                ambitions.
-              </font>
-            </font>
-          </p>
-          <p class="fading-info-item section__text not-visible" id="aboutus-info-3">
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">
-                We have no problems communicating with the client, we are always ready for any comments and suggestions.
-              </font>
-            </font>
-          </p>
-          <p class="fading-info-item section__text not-visible" id="aboutus-info-4">
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">
-                In a healthy and pleasant working atmosphere, slander and mistakes are less likely to occur, and this
-                has a positive impact on projects :)
-              </font>
-            </font>
-          </p>
-        </div>
-      </section>
-      <section class="services" id="services">
-        <h2 class="section__heading section__padding">
-          <strong class="section__title">
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">Our services</font>
-            </font>
-          </strong>
-          <span class="section__text">
-            <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">comprehensiveness of our activities</font>
+              <font style="vertical-align: inherit;">your business</font>
             </font>
           </span>
-        </h2>
-        <div class="services__cards">
-          <div class="card projektowanie aos-init aos-animate" data-aos="zoom-in" data-aos-once="true"
-            data-aos-delay="200" tabindex="0">
-            <p class="card__text">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">
-                  We offer free design for your website. </font>
-                <font style="vertical-align: inherit;">After the presentation, we will be ready for any comments that we
-                  will take into account in possible corrections.
-                </font>
-              </font>
-            </p>
-            <div class="card__intro">
-              <i class="bx bxs-pen card__intro-icon"></i>
-              <h3 class="card__intro-title">
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Projects</font>
-                </font>
-              </h3>
-            </div>
-          </div>
-          <div class="card construction aos-init aos-animate" data-aos="zoom-in" data-aos-once="true"
-            data-aos-delay="300" tabindex="0">
-            <p class="card__text">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">
-                  We will create (or rebuild) your website. </font>
-                <font style="vertical-align: inherit;">We will make sure that it is full of only the best solutions and
-                  proudly represents your business on the Internet
-                </font>
-              </font>
-            </p>
-            <div class="card__intro">
-              <i class="bx bxs-layer card__intro-icon"></i>
-              <h3 class="card__intro-title">
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Construction</font>
-                </font>
-              </h3>
-            </div>
-          </div>
-          <div class="card uiux aos-init aos-animate" data-aos="zoom-in" data-aos-once="true" data-aos-delay="400"
-            tabindex="0">
-            <p class="card__text">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">
-                  We will design the perfect structure and interface of your website based on the latest practices to
-                  encourage users to return in the future.
-                </font>
-              </font>
-            </p>
-            <div class="card__intro">
-              <i class="bx bxs-hand-up card__intro-icon"></i>
-              <h3 class="card__intro-title">
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">UI/UX</font>
-                </font>
-              </h3>
-            </div>
-          </div>
-          <div class="card optimization aos-init aos-animate" data-aos="zoom-in" data-aos-once="true"
-            data-aos-delay="500" tabindex="0">
-            <p class="card__text">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">
-                  We will optimize the performance and improve the SEO of your website so that it works as best as
-                  possible and ranks high on the web.
-                </font>
-              </font>
-            </p>
-            <div class="card__intro">
-              <i class="bx bxs-zap card__intro-icon"></i>
-              <h3 class="card__intro-title">
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Optimization</font>
-                </font>
-              </h3>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="projects" id="projects">
-        <h2 class="section__heading section__padding">
-          <strong class="section__title">
+          <span class="intro-text" style="transform: translate(0px);">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">to the network</font>
+            </font>
+          </span>
+          <span class="intro-text" style="transform: translate(0px);">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">thanks to ours</font>
+            </font>
+          </span>
+          <span class="intro-text" style="transform: translate(0px);">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">professional</font>
+            </font>
+          </span>
+          <span class="intro-text" style="transform: translate(0px);">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">parties</font>
+            </font>
+          </span>
+        </h1>
+        <a href="#contact" class="button primary intro-btn" style="opacity: 1;">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Contact us today and fly high with us</font>
+          </font>
+        </a>
+      </div>
+      <div class="racoon" style="opacity: 1;">
+        <img class="racoon-img" src="../../../assets/racoon.webp"
+          alt="Photo of a raccoon with raised arms, company logo">
+      </div>
+    </div>
+  </header>
+  <section class="aboutUsBox section__padding" id="about-us">
+    <h2 class="section__heading section__padding">
+      <span class="section__title">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">We are a group</font>
+        </font>
+      </span>
+    </h2>
+    <div class="rotating-block aos-init aos-animate" data-aos="zoom-out" data-aos-delay="100" data-aos-once="true"
+      data-aos-duration="500">
+      <h3 aria-describedby="aboutus-info-1" class="rotating-block-item section__text--big rotateHide">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            fresh programmers.
+          </font>
+        </font>
+      </h3>
+      <h3 aria-describedby="aboutus-info-2" class="rotating-block-item section__text--big rotateShow">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            motivated young people.
+          </font>
+        </font>
+      </h3>
+      <h3 aria-describedby="aboutus-info-3" class="rotating-block-item section__text--big standby">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            people open to others.
+          </font>
+        </font>
+      </h3>
+      <h3 aria-describedby="aboutus-info-4" class="rotating-block-item section__text--big standby">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            friends with a common hobby.
+          </font>
+        </font>
+      </h3>
+      <div class="rotating-block-dashed-bg absolute-center"></div>
+    </div>
+    <div class="rotating-block-indicators">
+      <div class="dot"></div>
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <div class="fading-info aos-init aos-animate" data-aos="zoom-out" data-aos-delay="200" data-aos-once="true"
+      data-aos-duration="500">
+      <p class="fading-info-item section__text not-visible" id="aboutus-info-1">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            After current courses, we are aware of today's web standards and practice the most professional
+            solutions.
+          </font>
+        </font>
+      </p>
+      <p class="fading-info-item section__text" id="aboutus-info-2">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            After a long time devoted to learning, we are ready to enter the labor market full of ideas and
+            ambitions.
+          </font>
+        </font>
+      </p>
+      <p class="fading-info-item section__text not-visible" id="aboutus-info-3">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            We have no problems communicating with the client, we are always ready for any comments and suggestions.
+          </font>
+        </font>
+      </p>
+      <p class="fading-info-item section__text not-visible" id="aboutus-info-4">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">
+            In a healthy and pleasant working atmosphere, slander and mistakes are less likely to occur, and this
+            has a positive impact on projects :)
+          </font>
+        </font>
+      </p>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <h2 class="section__heading section__padding">
+      <strong class="section__title">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Our services</font>
+        </font>
+      </strong>
+      <span class="section__text">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">comprehensiveness of our activities</font>
+        </font>
+      </span>
+    </h2>
+    <div class="services__cards">
+      <div class="card projektowanie aos-init aos-animate" data-aos="zoom-in" data-aos-once="true" data-aos-delay="200"
+        tabindex="0">
+        <p class="card__text">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">
+              We offer free design for your website. </font>
+            <font style="vertical-align: inherit;">After the presentation, we will be ready for any comments that we
+              will take into account in possible corrections.
+            </font>
+          </font>
+        </p>
+        <div class="card__intro">
+          <i class="bx bxs-pen card__intro-icon"></i>
+          <h3 class="card__intro-title">
             <font style="vertical-align: inherit;">
               <font style="vertical-align: inherit;">Projects</font>
             </font>
-          </strong>
-          <span class="section__text">
+          </h3>
+        </div>
+      </div>
+      <div class="card construction aos-init aos-animate" data-aos="zoom-in" data-aos-once="true" data-aos-delay="300"
+        tabindex="0">
+        <p class="card__text">
+          <font style="vertical-align: inherit;">
             <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">people who trusted us</font>
+              We will create (or rebuild) your website. </font>
+            <font style="vertical-align: inherit;">We will make sure that it is full of only the best solutions and
+              proudly represents your business on the Internet
             </font>
-          </span>
-        </h2>
-        <div class="projects-desktop-cnt">
-          <div class="projects-desc projects-parallax">
-            <div class="project power">
-              <div class="project-desc">
-                <div class="desc-heading">
-                  <h3 class="heading-title">
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Power Kwidzyn</font>
-                    </font>
-                  </h3><small class="heading-tag">
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Design and construction</font>
-                    </font>
-                  </small>
-                </div>
-                <div class="desc-content">
-                  <p class="content-main">
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Power Kwidzyn is a driving school that for a long time had
-                        a poorly functioning, outdated website. </font>
-                      <font style="vertical-align: inherit;">Despite the uncertainty, the business owner decided to
-                        trust us and is ultimately satisfied with a much better showcase of his business on the
-                        Internet.</font>
-                    </font>
-                  </p><small class="content-date">
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">May 8, 2023</font>
-                    </font>
-                  </small>
-                </div>
-                <div class="desc-btns"><a class="button primary" href="https://power-kwidzyn.pl" target="_blank"
-                    rel="noopener">
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Visit</font>
-                    </font><i class="bx bx-globe"></i>
-                  </a><a class="button secondary" href="https://github.com/patrykkawiak/OSK-Power-Kwidzyn"
-                    target="_blank" rel="noopener">
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Code</font>
-                    </font><i class="bx bx-code-alt"></i>
-                  </a></div>
-              </div>
-            </div>
-            <div class="project rebax">
-              <div class="project-desc">
-                <div class="desc-heading">
-                  <h3 class="heading-title">
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Rebax</font>
-                    </font>
-                  </h3><small class="heading-tag">
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Design and construction</font>
-                    </font>
-                  </small>
-                </div>
-                <div class="desc-content">
-                  <p class="content-main">
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Rebax did not have a website before our service. </font>
-                      <font style="vertical-align: inherit;">Even though it was introduced to the Internet recently, it
-                        proudly presents this construction wholesaler, appearing on the first pages of Internet users'
-                        browsers.</font>
-                    </font>
-                  </p><small class="content-date">
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">26/04/2023</font>
-                    </font>
-                  </small>
-                </div>
-                <div class="desc-btns"><a class="button primary" href="https://rebax.pl" target="_blank" rel="noopener">
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Visit</font>
-                    </font><i class="bx bx-globe"></i>
-                  </a><a class="button secondary" href="https://github.com/patrykkawiak/Rebax" target="_blank"
-                    rel="noopener">
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Code</font>
-                    </font><i class="bx bx-code-alt"></i>
-                  </a></div>
-              </div>
-            </div>
-          </div>
-          <div class="projects-showcase projects-parallax" style="transform: translate(0px, calc(-100% + 651px));">
-            <div class="desktop-showcase">
-              <div class="desktop-showcase-box loaded" style="background-image: url('../../../assets/image.png');"><img
-                  class="desktop-showcase-img" src="./dist/img/power.webp"></div>
-            </div>
-            <div class="desktop-showcase">
-              <div class="desktop-showcase-box loaded" style="background-image: url('../../../assets/image2.png');"><img
-                  class="desktop-showcase-img" src="./dist/img/rebax.webp"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="processes" id="processess" style="transform: translate(-16px, 0px);">
-        <div class="section-line line-top">
-          <div class="line">
-            <span class="text">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">Processes</font>
-              </font>
-            </span>
-          </div>
-        </div>
-        <h2 class="section__heading section__padding">
-          <strong class="section__title">
+          </font>
+        </p>
+        <div class="card__intro">
+          <i class="bx bxs-layer card__intro-icon"></i>
+          <h3 class="card__intro-title">
             <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">Create process</font>
+              <font style="vertical-align: inherit;">Construction</font>
             </font>
-          </strong>
-          <span class="section__text">
+          </h3>
+        </div>
+      </div>
+      <div class="card uiux aos-init aos-animate" data-aos="zoom-in" data-aos-once="true" data-aos-delay="400"
+        tabindex="0">
+        <p class="card__text">
+          <font style="vertical-align: inherit;">
             <font style="vertical-align: inherit;">
-              <font style="vertical-align: inherit;">learn how we work</font>
+              We will design the perfect structure and interface of your website based on the latest practices to
+              encourage users to return in the future.
             </font>
-          </span>
-        </h2>
-        <div class="section-line line-bottom">
-          <div class="line">
-            <span class="text">
-              <font style="vertical-align: inherit;">
-                <font style="vertical-align: inherit;">TBSK Technology</font>
-              </font>
-            </span>
-          </div>
+          </font>
+        </p>
+        <div class="card__intro">
+          <i class="bx bxs-hand-up card__intro-icon"></i>
+          <h3 class="card__intro-title">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">UI/UX</font>
+            </font>
+          </h3>
         </div>
-        <div class="processes-desktop">
-          <div class="processes-ctn">
-            <div class="processes-list">
-              <div class="processes-list-box"><button class="processes-list-item active">
-                  <div class="dot"></div><span class="processes-list-item-text">
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Consultation</font>
-                    </font>
-                  </span>
-                </button><button class="processes-list-item">
-                  <div class="dot"></div><span class="processes-list-item-text">
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Presentation</font>
-                    </font>
-                  </span>
-                </button><button class="processes-list-item">
-                  <div class="dot"></div><span class="processes-list-item-text">
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Approval</font>
-                    </font>
-                  </span>
-                </button><button class="processes-list-item">
-                  <div class="dot"></div><span class="processes-list-item-text">
-                    <font style="vertical-align: inherit;">
-                      <font style="vertical-align: inherit;">Execution</font>
-                    </font>
-                  </span>
-                </button></div>
-            </div>
-            <div class="processes-content">
-              <h3 class="processes-content-title">
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">How are the conversations going?</font>
-                </font>
-              </h3>
-              <p class="processes-content-text">
-                <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">We start by defining the service provided. </font>
-                  <font style="vertical-align: inherit;">If it is construction or design, we ask if there is any logo or
-                    business card of the company. </font>
-                  <font style="vertical-align: inherit;">Then we will ask about the content that should be included on
-                    the website. </font>
-                  <font style="vertical-align: inherit;">Based on this, we only create the structure and price the
-                    project. </font>
-                  <font style="vertical-align: inherit;">Then we start designing.</font>
-                </font>
-              </p>
-            </div>
-          </div>
+      </div>
+      <div class="card optimization aos-init aos-animate" data-aos="zoom-in" data-aos-once="true" data-aos-delay="500"
+        tabindex="0">
+        <p class="card__text">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">
+              We will optimize the performance and improve the SEO of your website so that it works as best as
+              possible and ranks high on the web.
+            </font>
+          </font>
+        </p>
+        <div class="card__intro">
+          <i class="bx bxs-zap card__intro-icon"></i>
+          <h3 class="card__intro-title">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Optimization</font>
+            </font>
+          </h3>
         </div>
-      </section>
+      </div>
     </div>
-  </ng-container>
-  <ng-container *ngSwitchCase="'tablet'">
-    <!-- Content for 'tablet' case -->
-  </ng-container>
-  <ng-container *ngSwitchCase="'mobile'">
-    <!-- Content for 'mobile' case -->
-  </ng-container>
-  <ng-container *ngSwitchDefault>
-    <!-- Content for other cases -->
-  </ng-container>
-</ng-container>
+  </section>
+  <section class="projects" id="projects">
+    <h2 class="section__heading section__padding">
+      <strong class="section__title">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Projects</font>
+        </font>
+      </strong>
+      <span class="section__text">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">people who trusted us</font>
+        </font>
+      </span>
+    </h2>
+    <div *ngIf="expression == 'laptop'" class="projects-desktop-cnt">
+      <div class="projects-desc projects-parallax">
+        <div class="project power">
+          <div class="project-desc">
+            <div class="desc-heading">
+              <h3 class="heading-title">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Power Kwidzyn</font>
+                </font>
+              </h3><small class="heading-tag">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Design and construction</font>
+                </font>
+              </small>
+            </div>
+            <div class="desc-content">
+              <p class="content-main">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Power Kwidzyn is a driving school that for a long time had
+                    a poorly functioning, outdated website. </font>
+                  <font style="vertical-align: inherit;">Despite the uncertainty, the business owner decided to
+                    trust us and is ultimately satisfied with a much better showcase of his business on the
+                    Internet.</font>
+                </font>
+              </p><small class="content-date">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">May 8, 2023</font>
+                </font>
+              </small>
+            </div>
+            <div class="desc-btns"><a class="button primary" href="https://power-kwidzyn.pl" target="_blank"
+                rel="noopener">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Visit</font>
+                </font><i class="bx bx-globe"></i>
+              </a><a class="button secondary" href="https://github.com/patrykkawiak/OSK-Power-Kwidzyn" target="_blank"
+                rel="noopener">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Code</font>
+                </font><i class="bx bx-code-alt"></i>
+              </a></div>
+          </div>
+        </div>
+        <div class="project rebax">
+          <div class="project-desc">
+            <div class="desc-heading">
+              <h3 class="heading-title">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Rebax</font>
+                </font>
+              </h3><small class="heading-tag">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Design and construction</font>
+                </font>
+              </small>
+            </div>
+            <div class="desc-content">
+              <p class="content-main">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Rebax did not have a website before our service. </font>
+                  <font style="vertical-align: inherit;">Even though it was introduced to the Internet recently, it
+                    proudly presents this construction wholesaler, appearing on the first pages of Internet users'
+                    browsers.</font>
+                </font>
+              </p><small class="content-date">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">26/04/2023</font>
+                </font>
+              </small>
+            </div>
+            <div class="desc-btns"><a class="button primary" href="https://rebax.pl" target="_blank" rel="noopener">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Visit</font>
+                </font><i class="bx bx-globe"></i>
+              </a><a class="button secondary" href="https://github.com/patrykkawiak/Rebax" target="_blank"
+                rel="noopener">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Code</font>
+                </font><i class="bx bx-code-alt"></i>
+              </a></div>
+          </div>
+        </div>
+      </div>
+      <div class="projects-showcase projects-parallax">
+        <div class="desktop-showcase">
+          <div class="desktop-showcase-box loaded" style="background-image: url('../../../assets/image.png');"><img
+              class="desktop-showcase-img" src="./dist/img/power.webp"></div>
+        </div>
+        <div class="desktop-showcase">
+          <div class="desktop-showcase-box loaded" style="background-image: url('../../../assets/image2.png');"><img
+              class="desktop-showcase-img" src="./dist/img/rebax.webp"></div>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="expression != 'laptop'" class="projects-mobile-cnt">
+      <div class="project power">
+        <div class="project-desc">
+          <div class="desc-heading">
+            <h3 class="heading-title">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Power Kwidzyn</font>
+              </font>
+            </h3><small class="heading-tag">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Design and construction</font>
+              </font>
+            </small>
+          </div>
+          <div class="desc-content">
+            <p class="content-main">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Power Kwidzyn is a driving school that for a long time had a
+                  poorly functioning, outdated website. </font>
+                <font style="vertical-align: inherit;">Despite the uncertainty, the business owner decided to trust us
+                  and is ultimately satisfied with a much better showcase of his business on the Internet.</font>
+              </font>
+            </p><small class="content-date">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">May 8, 2023</font>
+              </font>
+            </small>
+          </div>
+          <div class="desc-btns"><a class="button primary" href="https://power-kwidzyn.pl" target="_blank"
+              rel="noopener">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Visit</font>
+              </font><i class="bx bx-globe"></i>
+            </a><a class="button secondary" href="https://github.com/patrykkawiak/OSK-Power-Kwidzyn" target="_blank"
+              rel="noopener">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Code</font>
+              </font><i class="bx bx-code-alt"></i>
+            </a></div>
+        </div>
+        <div class="project-showcase">
+          <div class="showcase-box loaded" style="background-image: url('../../../assets/image.png');">
+          </div>
+        </div>
+      </div>
+      <div class="project rebax">
+        <div class="project-desc">
+          <div class="desc-heading">
+            <h3 class="heading-title">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Rebax</font>
+              </font>
+            </h3><small class="heading-tag">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Design and construction</font>
+              </font>
+            </small>
+          </div>
+          <div class="desc-content">
+            <p class="content-main">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Rebax did not have a website before our service. </font>
+                <font style="vertical-align: inherit;">Even though it was introduced to the Internet recently, it
+                  proudly presents this construction wholesaler, appearing on the first pages of Internet users'
+                  browsers.</font>
+              </font>
+            </p><small class="content-date">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">26/04/2023</font>
+              </font>
+            </small>
+          </div>
+          <div class="desc-btns"><a class="button primary" href="https://rebax.pl" target="_blank" rel="noopener">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Visit</font>
+              </font><i class="bx bx-globe"></i>
+            </a><a class="button secondary" href="https://github.com/patrykkawiak/Rebax" target="_blank" rel="noopener">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Code</font>
+              </font><i class="bx bx-code-alt"></i>
+            </a></div>
+        </div>
+        <div class="project-showcase">
+          <div class="showcase-box loaded" style="background-image: url('../../../assets/image2.png');">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="processes" id="processess">
+    <div class="section-line line-top">
+      <div class="line">
+        <span class="text">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Processes</font>
+          </font>
+        </span>
+      </div>
+    </div>
+    <h2 class="section__heading section__padding">
+      <strong class="section__title">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Create process</font>
+        </font>
+      </strong>
+      <span class="section__text">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">learn how we work</font>
+        </font>
+      </span>
+    </h2>
+    <div *ngIf="expression == 'laptop'" class="processes-desktop">
+      <div class="processes-ctn">
+        <div class="processes-list">
+          <div class="processes-list-box">
+            <button (click)="changeProcess($event)" class="processes-list-item active">
+              <div class="dot"></div>
+              <span class="processes-list-item-text">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Consultation</font>
+                </font>
+              </span>
+            </button>
+            <button (click)="changeProcess($event)" class="processes-list-item">
+              <div class="dot"></div>
+              <span class="processes-list-item-text">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Presentation</font>
+                </font>
+              </span>
+            </button>
+            <button (click)="changeProcess($event)" class="processes-list-item">
+              <div class="dot"></div>
+              <span class="processes-list-item-text">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Approval</font>
+                </font>
+              </span>
+            </button>
+            <button (click)="changeProcess($event)" class="processes-list-item">
+              <div class="dot"></div>
+              <span class="processes-list-item-text">
+                <font style="vertical-align: inherit;">
+                  <font style="vertical-align: inherit;">Execution</font>
+                </font>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="processes-content">
+          <h3 class="processes-content-title">
+            How are the conversations going?
+          </h3>
+          <p class="processes-content-text">
+            We start by defining the service provided.
+            If it is construction or design, we ask if there is any logo or
+            business card of the company.Then we will ask about the content that should be included on
+            the website.Based on this, we only create the structure and price the
+            project.Then we start designing.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="expression != 'laptop'" class="processes-mobile">
+      <div class="accordions">
+        <div *ngFor="let item of accordionItems; index as i" (click)="expand(i)" class="accordion">
+          <button class="accordion-heading" [attr.aria-controls]="'processes-accordion-' + (i + 1)"
+            [attr.aria-expanded]="false" aria-label="Collapses or expands the content of an accordion block">
+            <i class="bx bx-down-arrow-circle"></i>
+            <font style="vertical-align: inherit;">{{ item.title }}</font>
+          </button>
+          <div class="accordion-content" [attr.id]="'processes-accordion-' + (i + 1)" style="max-height: 0px;">
+            <h3 class="accordion-label">
+              <font style="vertical-align: inherit;">{{ item.content }}</font>
+            </h3>
+            <p  class="accordion-text">
+              {{item.answer}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="characteristics section__padding">
+    <div class="section-line line-top">
+      <div class="line">
+        <span class="text">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Our features</font>
+          </font>
+        </span>
+      </div>
+    </div>
+    <div class="characteristics-ctn">
+      <img src="../../../assets/characteristics.png"
+        alt="An image of a man working on a laptop at a camp in the forest." loading="lazy">
+      <div class="characteristics-items">
+        <div class="characteristics-item">
+          <h3 class="item-heading">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Originality</font>
+            </font>
+          </h3>
+          <p class="item-desc">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">
+                We will make sure that your website stands out from others, but is also functional.
+              </font>
+            </font>
+          </p>
+        </div>
+        <div class="characteristics-item">
+          <h3 class="item-heading">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Individuality</font>
+            </font>
+          </h3>
+          <p class="item-desc">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">
+                Our product is not made "in the factory", each element is a conscious decision with the customer in
+                mind.
+              </font>
+            </font>
+          </p>
+        </div>
+        <div class="characteristics-item">
+          <h3 class="item-heading">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Professional service</font>
+            </font>
+          </h3>
+          <p class="item-desc">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">
+                We are not afraid of communication and we will find our way in a conversation with every client.
+              </font>
+            </font>
+          </p>
+        </div>
+        <div class="characteristics-item">
+          <h3 class="item-heading">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Reliability</font>
+            </font>
+          </h3>
+          <p class="item-desc">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">
+                If necessary, we will present the actual strengths and weaknesses of each solution.
+              </font>
+            </font>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div *ngIf="expression == 'laptop'" class="parallax-hero" style="height: calc(2133px - 5rem);"></div>
+  <section class="pricing" id="pricing">
+    <div class="background-image-box" style="height: 1526px; width: 1526px;"></div>
+    <h2 class="section__headings section__padding">
+      <strong class="section__title" style="margin-top: 10px;">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">How much is it?</font>
+        </font>
+      </strong>
+      <span class="section__text">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">side to side uneven</font>
+        </font>
+      </span>
+      <small style="padding-bottom: 10px;color: white;">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Everything depends on:</font>
+        </font>
+      </small>
+    </h2>
+    <div class="pricing-content">
+      <div class="pricing-img">
+        <img src="../../../assets/question.png" alt="A man sitting on a question mark, wondering about something."
+          class="img-fluid">
+      </div>
+      <ul>
+        <li class="price-text pricing-text-one">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Design</font>
+          </font>
+        </li>
+        <li class="price-text pricing-text-two">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Concept</font>
+          </font>
+        </li>
+        <li class="price-text pricing-text-three">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Content</font>
+          </font>
+        </li>
+        <li class="price-text pricing-text-four">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Page type</font>
+          </font>
+        </li>
+        <li class="price-text pricing-text-five">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Structures</font>
+          </font>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="faq" id="faq">
+    <h2 class="section__heading section__padding">
+      <strong class="section__title">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Frequently Asked Questions</font>
+        </font>
+      </strong>
+      <small class="section__text">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">who asks not stray</font>
+        </font>
+      </small>
+    </h2>
+    <div class="accordions">
+      <div *ngFor="let item of faqItems; index as i" class="accordion accordionFaq aos-init aos-animate" [attr.data-aos]="'fade-' + (i % 2 === 0 ? 'right' : 'left')"
+        [attr.data-aos-delay]="i * 100" data-aos-once="true" data-aos-duration="800" data-aos-offset="400">
+        <button class="accordion-heading" [attr.aria-label]="'Collapses or expands the content of an accordion block'"
+          [attr.aria-expanded]="false" [attr.aria-controls]="'faq-accordion-' + (i + 1)" (click)="expandFaq(i)">
+          <i class="bx bx-down-arrow-circle"></i>
+          <font style="vertical-align: inherit;">{{ item.question }}</font>
+        </button>
+        <div class="accordion-content FaqContent" [attr.id]="'faq-accordion-' + (i + 1)" style="max-height: 0px;">
+          <p class="accordion-label">
+            <font style="vertical-align: inherit;">{{ item.header }}</font>
+          </p>
+          <p class="accordion-text">
+            {{ item.answer }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact section__padding" id="contact">
+    <h2 class="section__heading section__padding">
+      <strong class="section__title">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Let's talk about YOUR website
+          </font>
+        </font>
+      </strong>
+      <span class="section__text">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">getting down to specifics</font>
+        </font>
+      </span>
+    </h2>
+    <p class="knownusmore">
+      <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;">
+          Want to learn more? </font>
+        <font style="vertical-align: inherit;">We will be happy to answer any </font>
+      </font><br>
+      <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;">
+          questions and advise you as best we can.
+        </font>
+      </font>
+    </p>
+    <button (click)="openModel()" class="button primary buttoners" aria-controls="form-box"
+      aria-label="Opens a contact form popup">
+      <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;">
+          contact us
+        </font>
+      </font>
+    </button>
+  </section>
+  <section class="whoweare section__padding" id="whoweare">
+    <h2 class="section__heading section__padding">
+      <strong class="section__title">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Our team</font>
+        </font>
+      </strong>
+      <span class="section__text">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">get to know us better</font>
+        </font>
+      </span>
+    </h2>
+    <div class="whoweare-item-wrapper">
+      <div class="whoweare-item aos-init aos-animate" data-aos="fade-right" data-aos-delay="200" data-aos-once="true"
+        data-aos-duration="800" data-aos-offset="900">
+        <div class="whoweare-img">
+          <img src="../../../assets/avatar.jpg" class="img-fluid" alt="Photo by Patryk Kawiak">
+        </div>
+        <span class="whoweare-item-name">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Patryk Kawiak</font>
+          </font>
+        </span>
+        <p>
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">
+              Patryk is an experienced and constantly developing web developer. </font>
+            <font style="vertical-align: inherit;">He approaches each project very professionally and his innovative
+              approach makes each of his ideas unique and introduces many new things.
+            </font>
+          </font>
+        </p>
+
+        <div class="whoweare-item--links">
+          <a href="https://patrykkawiak-portfolio.pl" aria-label="Patryk Kawiak's portfolio" rel="noopener"
+            class="button secondary protfolio-click" target="_blank">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Portfolio</font>
+            </font>
+          </a>
+          <ul>
+            <li>
+              <a href="mailto:patryk.kawiak@icloud.com" aria-label="Patryk Kawiak's email">
+                <svg fill="#fff" width="50px" height="45px" viewBox="0 0 32 32" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <title>gmail</title>
+                    <path
+                      d="M30.996 7.824v17.381c0 0 0 0 0 0.001 0 1.129-0.915 2.044-2.044 2.044-0 0-0 0-0.001 0h-4.772v-11.587l-8.179 6.136-8.179-6.136v11.588h-4.772c0 0 0 0-0 0-1.129 0-2.044-0.915-2.044-2.044 0-0 0-0.001 0-0.001v0-17.381c0-0 0-0.001 0-0.001 0-1.694 1.373-3.067 3.067-3.067 0.694 0 1.334 0.231 1.848 0.619l-0.008-0.006 10.088 7.567 10.088-7.567c0.506-0.383 1.146-0.613 1.84-0.613 1.694 0 3.067 1.373 3.067 3.067v0z">
+                    </path>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+48669416762" aria-label="Patryk Kawiak's phone number"><i class="bx bxs-phone"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="whoweare-item aos-init aos-animate" data-aos="fade-left" data-aos-delay="200" data-aos-once="true"
+        data-aos-duration="800" data-aos-offset="900">
+        <div class="whoweare-img">
+          <img src="../../../assets/avatar.jpg" class="img-fluid" alt="Photo by Kacper Śmietański">
+        </div>
+        <span class="whoweare-item-name">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Kacper Śmietański</font>
+          </font>
+        </span>
+        <p>
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">
+              Kacper is an experienced web developer whose passion is creating beautiful and functional websites.
+            </font>
+            <font style="vertical-align: inherit;">He has extensive knowledge and skills acquired by completing
+              various courses in website creation.
+            </font>
+          </font>
+        </p>
+
+        <div class="whoweare-item--links">
+          <a href="https://github.com/KacperSmietanski" aria-label="Kacper Śmietański's portfolio" rel="noopener"
+            class="button secondary protfolio-click" target="_blank">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Portfolio</font>
+            </font>
+          </a>
+          <ul>
+            <li>
+              <a href="#" aria-label="Kacper Śmietanski's email">
+                <svg fill="#fff" width="50px" height="45px" viewBox="0 0 32 32" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <title>gmail</title>
+                    <path
+                      d="M30.996 7.824v17.381c0 0 0 0 0 0.001 0 1.129-0.915 2.044-2.044 2.044-0 0-0 0-0.001 0h-4.772v-11.587l-8.179 6.136-8.179-6.136v11.588h-4.772c0 0 0 0-0 0-1.129 0-2.044-0.915-2.044-2.044 0-0 0-0.001 0-0.001v0-17.381c0-0 0-0.001 0-0.001 0-1.694 1.373-3.067 3.067-3.067 0.694 0 1.334 0.231 1.848 0.619l-0.008-0.006 10.088 7.567 10.088-7.567c0.506-0.383 1.146-0.613 1.84-0.613 1.694 0 3.067 1.373 3.067 3.067v0z">
+                    </path>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Kacper Śmietański's phone number"><i class="bx bxs-phone"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="whoweare-item aos-init aos-animate" data-aos="fade-right" data-aos-delay="200" data-aos-once="true"
+        data-aos-duration="800" data-aos-offset="900">
+        <div class="whoweare-img">
+          <img src="../../../assets/avatar.jpg" class="img-fluid" alt="Photo by Mateusz Tryc">
+        </div>
+        <span class="whoweare-item-name">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Mateusz Tryc</font>
+          </font>
+        </span>
+        <p>
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">
+              Hobby guitarist, fanatic of puzzle games. </font>
+            <font style="vertical-align: inherit;">He loves optimizing pages and code as much as he can. </font>
+            <font style="vertical-align: inherit;">He loves to challenge himself in programming and then come up
+              with unique solutions.
+            </font>
+          </font>
+        </p>
+        <div class="whoweare-item--links">
+          <a href="https://github.com/edekstrazak" aria-label="Mateusz Tryc's portfolio" rel="noopener"
+            class="button secondary protfolio-click" target="_blank">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Portfolio</font>
+            </font>
+          </a>
+          <ul>
+            <li>
+              <a href="mailto:mateusz.tryc0@gmail.com" aria-label="Mateusz Tryc's email">
+                <svg fill="#fff" width="50px" height="45px" viewBox="0 0 32 32" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <title>gmail</title>
+                    <path
+                      d="M30.996 7.824v17.381c0 0 0 0 0 0.001 0 1.129-0.915 2.044-2.044 2.044-0 0-0 0-0.001 0h-4.772v-11.587l-8.179 6.136-8.179-6.136v11.588h-4.772c0 0 0 0-0 0-1.129 0-2.044-0.915-2.044-2.044 0-0 0-0.001 0-0.001v0-17.381c0-0 0-0.001 0-0.001 0-1.694 1.373-3.067 3.067-3.067 0.694 0 1.334 0.231 1.848 0.619l-0.008-0.006 10.088 7.567 10.088-7.567c0.506-0.383 1.146-0.613 1.84-0.613 1.694 0 3.067 1.373 3.067 3.067v0z">
+                    </path>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="tel:+48575509975" aria-label="Mateusz Tryc's phone number"><i class="bx bxs-phone"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="whoweare-item aos-init aos-animate" data-aos="fade-left" data-aos-delay="200" data-aos-once="true"
+        data-aos-duration="800" data-aos-offset="900">
+        <div class="whoweare-img">
+          <img src="../../../assets/avatar.jpg" class="img-fluid" alt="Photo by Dawid Budzilek">
+        </div>
+        <span class="whoweare-item-name">
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">Dawid Budzilek</font>
+          </font>
+        </span>
+        <p>
+          <font style="vertical-align: inherit;">
+            <font style="vertical-align: inherit;">
+              Dawid's hobby is design. </font>
+            <font style="vertical-align: inherit;">One of his favorite web development activities is looking for
+              great website designs and then reconstructing them himself. </font>
+            <font style="vertical-align: inherit;">The knowledge acquired in this way is transferred to each
+              subsequent project.
+            </font>
+          </font>
+        </p>
+
+        <div class="whoweare-item--links">
+          <a href="https://github.com/ciornecki" aria-label="Dawid Budzilek's portfolio" rel="noopener"
+            class="button secondary protfolio-click" target="_blank">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Portfolio</font>
+            </font>
+          </a>
+          <ul>
+            <li>
+              <a aria-label="Dawid Budzilek's email" href="#">
+                <svg fill="#fff" width="50px" height="45px" viewBox="0 0 32 32" version="1.1"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <title>gmail</title>
+                    <path
+                      d="M30.996 7.824v17.381c0 0 0 0 0 0.001 0 1.129-0.915 2.044-2.044 2.044-0 0-0 0-0.001 0h-4.772v-11.587l-8.179 6.136-8.179-6.136v11.588h-4.772c0 0 0 0-0 0-1.129 0-2.044-0.915-2.044-2.044 0-0 0-0.001 0-0.001v0-17.381c0-0 0-0.001 0-0.001 0-1.694 1.373-3.067 3.067-3.067 0.694 0 1.334 0.231 1.848 0.619l-0.008-0.006 10.088 7.567 10.088-7.567c0.506-0.383 1.146-0.613 1.84-0.613 1.694 0 3.067 1.373 3.067 3.067v0z">
+                    </path>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a aria-label="Dawid Budzilek's phone number" href="#"><i class="bx bxs-phone"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <span class="footer-text">
+      <font style="vertical-align: inherit;">
+        <font style="vertical-align: inherit;">Chatak Solutions</font>
+      </font>
+    </span>
+    <ul class="footer-links">
+      <li class="footer-link">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Vipul Singh</font>
+        </font>
+      </li>
+      <li class="footer-link">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Sarthak Rana</font>
+        </font>
+      </li>
+      <li class="footer-link">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Karan Yadav</font>
+        </font>
+      </li>
+      <li class="footer-link">
+        <font style="vertical-align: inherit;">
+          <font style="vertical-align: inherit;">Hariom</font>
+        </font>
+      </li>
+    </ul>
+  </footer>
+</div>

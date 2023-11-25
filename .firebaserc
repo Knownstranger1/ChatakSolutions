@@ -1,0 +1,19 @@
+{
+  "projects": {
+    "default": "strong-atlas-388807",
+    "dev": "devevnchatak",
+    "stage": "stagingenvchatak",
+    "prod": "prodenvchatak"
+  },
+  "targets": {
+    "strong-atlas-388807": {
+      "hosting": {
+        "chataksolutions.shop": [
+          "dist",
+          "dist/chatak-solutions"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
