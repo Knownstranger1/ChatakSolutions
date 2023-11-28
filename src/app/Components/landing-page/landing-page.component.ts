@@ -9,16 +9,16 @@ import { DialogComponent } from '../Utils/dialog/dialog.component';
 })
 export class LandingPageComponent implements OnDestroy {
   accordionItems = [
-    { title: 'Consultation', content: 'How are the conversations going?',answer:'We start by defining the service provided. If it is construction or design, we ask if there is any logo or business card of the company. Then we will ask about the content that should be included on the website. Based on this, we only create the structure and price the project. Then we start designing.' },
-    { title: 'Presentation', content: 'What does the project presentation look like?',answer:' After completing the website design, we present it to you for evaluation. Then we accept all comments regarding the selection of colors, construction of sections, etc. We also explain why certain elements must contain certain features. Then we make any changes.' },
-    { title: 'Approval', content: 'What is the approval stage?',answer:'This is the step where you decide to accept or reject our services. If you commission us to create a website, we will tell you how much time it will probably take us. Additionally, we will need the exact content that will ultimately appear on your business card.' },
-    { title: 'Execution', content: 'Project execution!',answer:'This is the step where you decide to accept or reject our services. If you commission us to create a website, we will tell you how much time it will probably take us. Additionally, we will need the exact content that will ultimately appear on your business card.' }
+    { title: 'Consultation', content: 'How are the conversations going?', answer: 'We start by defining the service provided. If it is construction or design, we ask if there is any logo or business card of the company. Then we will ask about the content that should be included on the website. Based on this, we only create the structure and price the project. Then we start designing.' },
+    { title: 'Presentation', content: 'What does the project presentation look like?', answer: ' After completing the website design, we present it to you for evaluation. Then we accept all comments regarding the selection of colors, construction of sections, etc. We also explain why certain elements must contain certain features. Then we make any changes.' },
+    { title: 'Approval', content: 'What is the approval stage?', answer: 'This is the step where you decide to accept or reject our services. If you commission us to create a website, we will tell you how much time it will probably take us. Additionally, we will need the exact content that will ultimately appear on your business card.' },
+    { title: 'Execution', content: 'Project execution!', answer: 'This is the step where you decide to accept or reject our services. If you commission us to create a website, we will tell you how much time it will probably take us. Additionally, we will need the exact content that will ultimately appear on your business card.' }
   ];
   public expression: string = '';
   public listeners: any = {};
   private currentIndex: number = 0;
   public clicked: boolean = false
-  public faqItems:Array<any> = [
+  public faqItems: Array<any> = [
     {
       question: 'What is hosting?',
       header: 'Hosting is a server, a place on the Internet for your website',
@@ -27,12 +27,12 @@ export class LandingPageComponent implements OnDestroy {
     {
       question: 'Is hosting included in the price of the service?',
       header: 'The price of hosting is not included in our quote.',
-      answer:'Purchasing hosting will be your task and we can help you with that. After uploading the website to hosting, we will be able to implement any changes remotely, from our own computer, and we will not need your login details.'
+      answer: 'Purchasing hosting will be your task and we can help you with that. After uploading the website to hosting, we will be able to implement any changes remotely, from our own computer, and we will not need your login details.'
     },
     {
       question: 'Are changes to the website subject to a fee?',
       header: 'We offer free minor changes one year after the end of the service contract.',
-      answer:'It would look different if the changes were large, e.g., a new unique section or a complete change of the current ones. Then it takes much more time. However, all changes such as replacing text, photos, small structure changes - they will be free for a year.'
+      answer: 'It would look different if the changes were large, e.g., a new unique section or a complete change of the current ones. Then it takes much more time. However, all changes such as replacing text, photos, small structure changes - they will be free for a year.'
     }
   ];
   public links: Array<any> = [{
@@ -75,7 +75,7 @@ export class LandingPageComponent implements OnDestroy {
   ];
   public accordionContents: any;
   public accordionHeadings: any;
-
+  public observer!: IntersectionObserver
   constructor(
     private renderer: Renderer2,
     private el: ElementRef,
@@ -125,10 +125,48 @@ export class LandingPageComponent implements OnDestroy {
     this.handleAboutUs()
     this.checkWindow()
     const element = this.el.nativeElement.querySelector('.mobileNavbar')
-    if(element){
-      this.renderer.setStyle(element,'height','0svh')
+    if (element) {
+      this.renderer.setStyle(element, 'height', '0svh')
     }
+    this.observeCardElement()
+    this.observeRotateAndFadeElement()
   }
+
+  observeCardElement() {
+    this.observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const square = entry.target.querySelectorAll('.card');
+        if (entry.isIntersecting) {
+          square.forEach(e => {
+            e.classList.add('square-animation');
+          })
+          return
+        }
+        square.forEach(e => {
+          e.classList.remove('square-animation');
+        })
+      });
+    })
+    this.observer.observe(this.el.nativeElement.querySelector('.services__cards'));
+  }
+
+  observeRotateAndFadeElement() {
+    this.observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        const rotatingBlock = entry.target.querySelector('.rotating-block') as HTMLDivElement;
+        const fade: any = entry.target.querySelector('.fading-info')
+        if (entry.isIntersecting) {
+          rotatingBlock.classList.add('square-animation');
+          fade.classList.add('square-animation');
+          return;
+        }
+        rotatingBlock.classList.remove('square-animation');
+        fade.classList.remove('square-animation');
+      });
+    })
+    this.observer.observe(this.el.nativeElement.querySelector('.block'));
+  }
+
 
   prepAccordions = () => {
     this.accordionContents.forEach((content: any) => {
@@ -137,7 +175,7 @@ export class LandingPageComponent implements OnDestroy {
   };
 
   ngOnDestroy(): void {
-    localStorage.setItem('data', JSON.stringify(this.listeners))
+
   }
 
   @HostListener('mouseout', ['$event'])
@@ -361,14 +399,14 @@ export class LandingPageComponent implements OnDestroy {
   async openDrawer() {
     this.clicked = !this.clicked
     const element = this.el.nativeElement.querySelector('.mobileNavbar')
-    if(this.clicked){
-     this.renderer.setStyle(element,'height','100svh')
-    }else{
-      this.renderer.setStyle(element,'height','0svh')
+    if (this.clicked) {
+      this.renderer.setStyle(element, 'height', '100svh')
+    } else {
+      this.renderer.setStyle(element, 'height', '0svh')
     }
   }
 
-  expand(index:number) {
+  expand(index: number) {
     const accordionContent = this.el.nativeElement.querySelectorAll('.accordion-content');
     const accordion = this.el.nativeElement.querySelectorAll('.accordion');
     const currentAriaExpanded = accordion[index].getAttribute('aria-expanded') === 'true';
@@ -380,7 +418,7 @@ export class LandingPageComponent implements OnDestroy {
     accordion[index].setAttribute('aria-expanded', String(!currentAriaExpanded));
   }
 
-  expandFaq(index:number){
+  expandFaq(index: number) {
     const accordion = this.el.nativeElement.querySelectorAll('.accordionFaq');
     const accordionContent = this.el.nativeElement.querySelectorAll('.FaqContent');
     const currentAriaExpanded = accordion[index].getAttribute('aria-expanded') === 'true';
@@ -408,10 +446,7 @@ export class LandingPageComponent implements OnDestroy {
   async openModel() {
     this.dialog.open(DialogComponent, {
       hasBackdrop: true,
-      height: this.expression == 'laptop'?'80%':'45%',
-      width: '90%'
+      height: this.expression == 'laptop' ? '80%' : '45%'
     })
   }
-
 }
-

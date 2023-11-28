@@ -34,7 +34,7 @@
 }
 
 .intro-btn {
-  font-size:2.5rem;
+  font-size: 2.5rem;
   padding: 1.2rem 2.4rem;
   transition: .2s;
 }
@@ -263,6 +263,12 @@ a {
   height: 6rem;
   margin-bottom: 2rem;
   max-width: 800px;
+  transform: scale(.5);
+  opacity: 0;
+  transition-property: opacity,transform;
+  transition-timing-function: ease;
+  transition-delay: .1s;
+  transition-duration: .5s;
 }
 
 .rotating-block-indicators {
@@ -326,6 +332,12 @@ a {
   background-color: #fff;
   max-width: 800px;
   border: 1px solid #000;
+  transform: scale(.5);
+  opacity: 0;
+  transition-property: opacity,transform;
+  transition-timing-function: ease;
+  transition-delay: .1s;
+  transition-duration: .5s;
 }
 
 
@@ -404,6 +416,12 @@ a {
 .services__cards .card {
   width: 25%;
   min-height: calc(100vh - 19rem);
+  transform: scale(.5);
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-timing-function: ease;
+  transition-delay: .1s;
+  transition-duration: .5s;
 }
 
 .services .projektowanie {
@@ -677,7 +695,20 @@ a {
 }
 
 .projects .section__heading {
-  padding-bottom: 0;
+  margin-bottom: -69px;
+}
+
+.block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.square-animation {
+  opacity: 1 !important;
+  transform: translateZ(0) scale(1) !important;
 }
 
 .projects .projects-desktop-cnt .projects-showcase .desktop-showcase {
@@ -728,12 +759,12 @@ a {
 
 .processes {
   position: fixed;
-  top: 0rem;
+  top: 5rem;
   display: flex;
   justify-content: center;
   gap: 10vh;
   flex-direction: column;
-  height: 100%;
+  height: calc(100vh - 5rem);
   z-index: 7;
   transform: translateX(100%);
 }
@@ -925,11 +956,11 @@ a {
   z-index: 8;
   overflow: hidden;
   position: fixed;
-  top: 0rem;
-  height: 100%;
+  top: 5rem;
+  height: calc(100vh - 5rem);
   width: 100%;
   padding: 0;
-  transform: translateX(100%);
+  transform: translate(100%);
 }
 
 .characteristics .characteristics-ctn {
@@ -977,6 +1008,10 @@ section img {
   to {
     transform: translateX(0) translateY(0);
   }
+}
+
+.parallax-hero {
+  background: linear-gradient(#161418, #161418);
 }
 
 header {
@@ -1166,6 +1201,10 @@ header {
   height: 1px;
   background-color: #ababab;
   z-index: 9;
+}
+
+.pricing .section__heading {
+  flex-direction: column;
 }
 
 .pricing .section__heading small {
@@ -1599,6 +1638,7 @@ nav {
 @media only screen and (max-width: 768px) {
   .racoon {
     opacity: 0 !important;
+    display: none !important;
   }
 
   .processes {
@@ -1789,7 +1829,7 @@ nav {
     height: 100svh;
     display: flex;
     flex-direction: column;
-}
+  }
 
   nav .mobileNavbar .navBars {
     display: flex;
